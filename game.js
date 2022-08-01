@@ -33,7 +33,9 @@ function isValidChoice(choice){ //Unused
 //Compare them
 
 function compareChoices(computerChoice,playerChoice){
-    if (computerChoice === "rock" && playerChoice === "scissors" || computerChoice === "paper" && playerChoice === "rock" || computerChoice === "scissors" && playerChoice === "paper") {
+    if (computerChoice === "rock" && playerChoice === "scissors" ||
+        computerChoice === "paper" && playerChoice === "rock" ||
+        computerChoice === "scissors" && playerChoice === "paper") {
         cpuPoints += 1
         return "You lose. " + capitalize(computerChoice) + " beats " + capitalize(playerChoice) + "."
     } else if (computerChoice === playerChoice) {
