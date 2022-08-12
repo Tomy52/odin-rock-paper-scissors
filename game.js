@@ -106,3 +106,19 @@ function resetScore(){
 function capitalize(text) {
     return text.charAt(0).toUpperCase() + text.slice(1);
 };
+
+//New approach (UI Based)
+
+//Let the player choose the number of rounds in a text box after "button-start"
+//is pressed
+
+//Gather user input and use it on game() function
+
+//Rework game() function so it doesn't show a prompt asking the user
+//to choose an option and instead show 3 buttons on the page
+
+//Display results on the page instead of the console
+
+//Show a button to end the game
+
+//Show initial button selection after the game is finished
