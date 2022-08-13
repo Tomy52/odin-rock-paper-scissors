@@ -1,11 +1,15 @@
+#button-reset{
+    display: none;
+}
+
 .round-selection {
-    visibility: hidden;
+    display: none;
 }
 
 .choice-buttons {
-    visibility: hidden;
+    display: none;
 }
 
 .final-buttons {
-    visibility: hidden;
+    display: none;
 }
