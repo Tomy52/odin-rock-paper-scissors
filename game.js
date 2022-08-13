@@ -112,6 +112,13 @@ function capitalize(text) {
 //Let the player choose the number of rounds in a text box after "button-start"
 //is pressed
 
+const roundSelector = document.querySelector('.round-selector')
+
+const play = document.querySelector('#button-start')
+play.addEventListener('click', () => {
+    roundSelector.style.visibility = 'visible'
+});
+
 //Gather user input and use it on game() function
 
 //Rework game() function so it doesn't show a prompt asking the user
