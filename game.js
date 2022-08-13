@@ -112,7 +112,7 @@ function capitalize(text) {
 //Let the player choose the number of rounds in a text box after "button-start"
 //is pressed
 
-const roundSelector = document.querySelector('.round-selector')
+const roundSelector = document.querySelector('.round-selection')
 
 const play = document.querySelector('#button-start')
 play.addEventListener('click', () => {
@@ -120,6 +120,17 @@ play.addEventListener('click', () => {
 });
 
 //Gather user input and use it on game() function
+
+const roundSelectorBox = document.querySelector('.round-selector')
+
+const roundSelectorBtn = document.querySelector('#select-rounds')
+
+let rounds;
+
+roundSelectorBtn.addEventListener('click', () => {
+    rounds = Number(roundSelectorBox.value)
+    game(rounds)
+})
 
 //Rework game() function so it doesn't show a prompt asking the user
 //to choose an option and instead show 3 buttons on the page
