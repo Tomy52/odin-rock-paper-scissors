@@ -2,6 +2,10 @@
     display: none;
 }
 
+.scoreboard {
+    display: none;
+}
+
 .round-selection {
     display: none;
 }
